@@ -1,0 +1,48 @@
+{
+  "site": {
+    "name": "RoEstate",
+    "tagline": "Premium Real Estate in Romania"
+  },
+  "nav": {
+    "home": "Home",
+    "properties": "Properties",
+    "about": "About Us",
+    "contact": "Contact",
+    "sellers": "For Sellers",
+    "buyers": "For Buyers",
+    "scheduleViewing": "Schedule a Viewing"
+  },
+  "languagePicker": {
+    "title": "Choose your language",
+    "subtitle": "You can change this later from the menu",
+    "continue": "Continue",
+    "languages": {
+      "en": "English",
+      "ro": "Română",
+      "tr": "Türkçe",
+      "ar": "العربية"
+    }
+  },
+  "home": {
+    "title": "Premium Real Estate in Romania",
+    "subtitle": "Site under construction — phase 1 of 4"
+  },
+  "footer": {
+    "tagline": "Your trusted partner for cross-border property investment in Romania.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "phone": "+40 700 000 000",
+    "email": "contact@roestate.ro",
+    "address": "Strada Florilor 12, Bucharest, Romania",
+    "copyright": "© 2025 RoEstate. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "chatWithUs": "Chat with us"
+  }
+}

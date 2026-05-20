@@ -1,0 +1,48 @@
+{
+  "site": {
+    "name": "RoEstate",
+    "tagline": "عقارات فاخرة في رومانيا"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "properties": "العقارات",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "sellers": "للبائعين",
+    "buyers": "للمشترين",
+    "scheduleViewing": "جدولة زيارة"
+  },
+  "languagePicker": {
+    "title": "اختر لغتك",
+    "subtitle": "يمكنك تغيير ذلك لاحقاً من القائمة",
+    "continue": "متابعة",
+    "languages": {
+      "en": "English",
+      "ro": "Română",
+      "tr": "Türkçe",
+      "ar": "العربية"
+    }
+  },
+  "home": {
+    "title": "عقارات فاخرة في رومانيا",
+    "subtitle": "الموقع قيد الإنشاء — المرحلة الأولى من أربع"
+  },
+  "footer": {
+    "tagline": "شريكك الموثوق للاستثمار العقاري عبر الحدود في رومانيا.",
+    "quickLinks": "روابط سريعة",
+    "legal": "قانوني",
+    "contact": "اتصل بنا",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة",
+    "cookiePolicy": "سياسة ملفات تعريف الارتباط",
+    "phone": "+40 700 000 000",
+    "email": "contact@roestate.ro",
+    "address": "شارع فلوريلور 12، بوخارست، رومانيا",
+    "copyright": "© 2025 RoEstate. جميع الحقوق محفوظة."
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "chatWithUs": "تحدث معنا"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "site": {
+    "name": "RoEstate",
+    "tagline": "Imobiliare Premium în România"
+  },
+  "nav": {
+    "home": "Acasă",
+    "properties": "Proprietăți",
+    "about": "Despre Noi",
+    "contact": "Contact",
+    "sellers": "Pentru Vânzători",
+    "buyers": "Pentru Cumpărători",
+    "scheduleViewing": "Programați o Vizionare"
+  },
+  "languagePicker": {
+    "title": "Alegeți Limba",
+    "subtitle": "Puteți schimba asta mai târziu din meniu",
+    "continue": "Continuați",
+    "languages": {
+      "en": "English",
+      "ro": "Română",
+      "tr": "Türkçe",
+      "ar": "العربية"
+    }
+  },
+  "home": {
+    "title": "Imobiliare Premium în România",
+    "subtitle": "Site în construcție — faza 1 din 4"
+  },
+  "footer": {
+    "tagline": "Partenerul dvs. de încredere pentru investiții imobiliare transfrontaliere în România.",
+    "quickLinks": "Linkuri Rapide",
+    "legal": "Legal",
+    "contact": "Contact",
+    "privacyPolicy": "Politica de Confidențialitate",
+    "termsOfService": "Termeni și Condiții",
+    "cookiePolicy": "Politica de Cookies",
+    "phone": "+40 700 000 000",
+    "email": "contact@roestate.ro",
+    "address": "Strada Florilor 12, București, România",
+    "copyright": "© 2025 RoEstate. Toate drepturile rezervate."
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "Ceva a mers greșit",
+    "chatWithUs": "Discutați cu noi"
+  }
+}

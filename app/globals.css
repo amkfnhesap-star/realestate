@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand color scale — deep navy */
+  --color-brand-50: #F4F6F9;
+  --color-brand-100: #E5E9F0;
+  --color-brand-200: #C9D1DC;
+  --color-brand-300: #9AAABC;
+  --color-brand-400: #5F7593;
+  --color-brand-500: #34496A;
+  --color-brand-600: #1F324F;
+  --color-brand-700: #142545;
+  --color-brand-800: #0F1B2D;
+  --color-brand-900: #0A1322;
+  --color-brand-950: #050912;
+
+  /* Gold accent scale */
+  --color-gold-50: #FBF8F0;
+  --color-gold-100: #F5EFDD;
+  --color-gold-200: #EBDFBA;
+  --color-gold-300: #DCCA8E;
+  --color-gold-400: #C9A961;
+  --color-gold-500: #B68F40;
+  --color-gold-600: #9A7530;
+  --color-gold-700: #7C5C25;
+  --color-gold-800: #5E461E;
+  --color-gold-900: #3F2F15;
+
+  /* Font families */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-arabic: var(--font-noto-arabic), "Noto Naskh Arabic", serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAFAF7;
+  --foreground: #0f172a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Arabic locale: switch body font to Noto Naskh Arabic */
+:lang(ar) body,
+:lang(ar) {
+  font-family: var(--font-arabic);
+}
+
+/* Text selection */
+::selection {
+  background-color: #0F1B2D;
+  color: #ffffff;
 }

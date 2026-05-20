@@ -1,0 +1,48 @@
+{
+  "site": {
+    "name": "RoEstate",
+    "tagline": "Romanya'da Premium Gayrimenkul"
+  },
+  "nav": {
+    "home": "Anasayfa",
+    "properties": "Mülkler",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "sellers": "Satıcılar İçin",
+    "buyers": "Alıcılar İçin",
+    "scheduleViewing": "Görüntüleme Planlayın"
+  },
+  "languagePicker": {
+    "title": "Dilinizi Seçin",
+    "subtitle": "Bunu daha sonra menüden değiştirebilirsiniz",
+    "continue": "Devam Et",
+    "languages": {
+      "en": "English",
+      "ro": "Română",
+      "tr": "Türkçe",
+      "ar": "العربية"
+    }
+  },
+  "home": {
+    "title": "Romanya'da Premium Gayrimenkul",
+    "subtitle": "Site yapım aşamasında — 4 aşamadan 1. aşama"
+  },
+  "footer": {
+    "tagline": "Romanya'da sınır ötesi gayrimenkul yatırımı için güvenilir ortağınız.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "legal": "Hukuki",
+    "contact": "İletişim",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Şartları",
+    "cookiePolicy": "Çerez Politikası",
+    "phone": "+40 700 000 000",
+    "email": "contact@roestate.ro",
+    "address": "Strada Florilor 12, Bükreş, Romanya",
+    "copyright": "© 2025 RoEstate. Tüm hakları saklıdır."
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir şeyler yanlış gitti",
+    "chatWithUs": "Bizimle sohbet edin"
+  }
+}
