@@ -5,7 +5,7 @@ import { routing } from "@/i18n/routing";
 import SetHtmlAttributes from "@/components/SetHtmlAttributes";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
+import CookieBanner from "@/components/layout/CookieBanner";
 import LanguagePicker from "@/components/LanguagePicker";
 
 export function generateStaticParams() {
@@ -35,7 +35,7 @@ export default async function LocaleLayout({
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
-      <WhatsAppFloat />
+      <CookieBanner />
       <LanguagePicker />
     </NextIntlClientProvider>
   );

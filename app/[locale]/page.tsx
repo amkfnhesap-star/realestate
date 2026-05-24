@@ -153,15 +153,15 @@ function HomeContent({ properties }: { properties: Property[] }) {
         <div className="relative z-10 flex-1 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24">
             <div className="max-w-2xl">
-              <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-semibold text-brand-800 leading-[1.1] mb-6">
+              <h1 className="animate-fade-rise font-heading text-5xl md:text-6xl lg:text-7xl font-semibold text-brand-800 leading-[1.1] mb-6" style={{ animationDelay: '0s' }}>
                 {t('hero.titleBefore')}{' '}
                 <em className="text-gold-400">{t('hero.titleAccent')}</em>
                 {' '}{t('hero.titleAfter')}
               </h1>
-              <p className="text-brand-500 text-lg md:text-xl mb-10 leading-relaxed">
+              <p className="animate-fade-rise text-brand-500 text-lg md:text-xl mb-10 leading-relaxed" style={{ animationDelay: '0.15s' }}>
                 {t('hero.subtitle')}
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="animate-fade-rise flex flex-wrap gap-4" style={{ animationDelay: '0.3s' }}>
                 <Link
                   href="/properties"
                   className="inline-block bg-gold-400 text-brand-900 px-7 py-3.5 rounded-xl font-semibold hover:bg-gold-500 transition-colors shadow-[0_4px_20px_rgba(201,163,94,0.35)]"

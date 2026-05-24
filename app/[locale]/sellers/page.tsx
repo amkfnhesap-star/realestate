@@ -43,14 +43,15 @@ function SellersContent() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-brand-800 py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative bg-brand-900 py-24 overflow-hidden">
+        <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920&q=80"
             alt=""
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(14,14,16,0.6) 0%, rgba(14,14,16,0.85) 100%)' }} />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -63,21 +64,21 @@ function SellersContent() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-white py-20">
+      <section className="bg-brand-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-4xl font-semibold text-brand-800 mb-10 text-center">
             {t('benefits.heading')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {BENEFITS.map((b) => (
-              <div key={b.title} className="bg-brand-50 rounded-2xl p-6 border border-slate-100">
+              <div key={b.title} className="bg-brand-50 rounded-2xl p-6 border border-brand-200">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 text-gold-500 mt-1">
+                  <div className="flex-shrink-0 text-gold-400 mt-1">
                     <CheckIcon />
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-brand-800 mb-1">{b.title}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed">{b.desc}</p>
+                    <p className="text-brand-500 text-sm leading-relaxed">{b.desc}</p>
                   </div>
                 </div>
               </div>
@@ -94,10 +95,10 @@ function SellersContent() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((step) => (
-              <div key={step.num} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm text-center">
-                <div className="font-heading text-5xl font-semibold text-gold-200 mb-3">{step.num}</div>
+              <div key={step.num} className="bg-brand-100 rounded-2xl p-6 border border-brand-200 text-center">
+                <div className="font-heading text-5xl font-semibold text-gold-400/40 mb-3">{step.num}</div>
                 <h3 className="font-heading text-lg font-semibold text-brand-800 mb-2">{step.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
+                <p className="text-brand-500 text-sm leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -105,13 +106,13 @@ function SellersContent() {
       </section>
 
       {/* List your property form */}
-      <section className="bg-white py-20">
+      <section className="bg-brand-900 py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-4xl font-semibold text-brand-800 mb-2 text-center">
             {t('listForm.heading')}
           </h2>
-          <p className="text-slate-500 text-center mb-8">{t('listForm.subtitle')}</p>
-          <div className="bg-white rounded-2xl p-7 shadow-md border border-slate-100">
+          <p className="text-brand-500 text-center mb-8">{t('listForm.subtitle')}</p>
+          <div className="bg-brand-50 rounded-2xl p-7 border border-brand-200">
             <SellersForm />
           </div>
         </div>

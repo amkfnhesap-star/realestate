@@ -8,10 +8,10 @@ const LOCALE_KEY = "preferred_locale";
 const COOKIE_NAME = "NEXT_LOCALE";
 
 const LANGUAGES = [
-  { code: "en", flag: "🇬🇧", label: "EN" },
-  { code: "ro", flag: "🇷🇴", label: "RO" },
-  { code: "tr", flag: "🇹🇷", label: "TR" },
-  { code: "ar", flag: "🇸🇦", label: "AR" },
+  { code: "en", countryCode: "gb", label: "EN" },
+  { code: "ro", countryCode: "ro", label: "RO" },
+  { code: "tr", countryCode: "tr", label: "TR" },
+  { code: "ar", countryCode: "sa", label: "AR" },
 ];
 
 export default function LanguageSwitcher() {
@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
   const pathname = usePathname();
   const locale = useLocale();
 
-  const current = LANGUAGES.find((l) => l.code === locale) ?? LANGUAGES[0];
+  const current = LANGUAGES.find((l) => l.code === locale) ?? LANGUAGES[0]!;
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -48,7 +48,11 @@ export default function LanguageSwitcher() {
         aria-expanded={open}
         aria-haspopup="listbox"
       >
-        <span>{current.flag}</span>
+        <span
+          className={`fi fi-${current.countryCode}`}
+          style={{ width: "1.25rem", height: "0.9375rem", backgroundSize: "cover", display: "inline-block" }}
+          aria-hidden="true"
+        />
         <span>{current.label}</span>
         <svg
           className={`w-3.5 h-3.5 text-brand-500 transition-transform ${open ? "rotate-180" : ""}`}
@@ -78,7 +82,11 @@ export default function LanguageSwitcher() {
                 ${lang.code === locale ? "bg-brand-50 text-gold-400 font-medium" : "text-brand-600"}
               `}
             >
-              <span>{lang.flag}</span>
+              <span
+                className={`fi fi-${lang.countryCode}`}
+                style={{ width: "1.25rem", height: "0.9375rem", backgroundSize: "cover", display: "inline-block" }}
+                aria-hidden="true"
+              />
               <span>{lang.label}</span>
             </button>
           ))}

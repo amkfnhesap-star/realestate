@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useMessages } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
@@ -36,6 +36,11 @@ function PropertyContent({ property, allProperties }: { property: Property; allP
     .filter((p) => p.id !== property.id && (p.type === property.type || p.city === property.city))
     .slice(0, 3);
 
+  const messages = useMessages();
+  const propMsgs = (messages as any)?.properties?.propertyData;
+  const neighborhoodName: string = propMsgs?.neighborhoods?.[property.neighborhood] ?? property.neighborhood;
+  const cityName: string = propMsgs?.cities?.[property.city] ?? property.city;
+
   const TYPE_LABELS: Record<string, string> = {
     apartment: tProp('types.apartment'),
     house: tProp('types.house'),
@@ -68,7 +73,7 @@ function PropertyContent({ property, allProperties }: { property: Property; allP
                   {property.title}
                 </h1>
                 <span className="text-3xl font-semibold text-gold-400 whitespace-nowrap">
-                  €{property.price.toLocaleString()}
+                  €{new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(property.price)}
                 </span>
               </div>
               <p className="text-brand-500 text-sm flex items-center gap-1">
@@ -76,7 +81,7 @@ function PropertyContent({ property, allProperties }: { property: Property; allP
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
-                {property.neighborhood}, {property.city}
+                {neighborhoodName}, {cityName}
               </p>
             </div>
 
@@ -90,12 +95,12 @@ function PropertyContent({ property, allProperties }: { property: Property; allP
                 {property.bathrooms > 0 && (
                   <SpecItem label={t('bathrooms')} value={String(property.bathrooms)} />
                 )}
-                <SpecItem label={t('area')} value={`${property.area.toLocaleString()} ${t('sqm')}`} />
+                <SpecItem label={t('area')} value={`${new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(property.area)} ${t('sqm')}`} />
                 {property.yearBuilt > 0 && (
                   <SpecItem label={t('yearBuilt')} value={String(property.yearBuilt)} />
                 )}
                 <SpecItem label={t('type')} value={TYPE_LABELS[property.type] ?? property.type} />
-                <SpecItem label={t('location')} value={property.city} />
+                <SpecItem label={t('location')} value={cityName} />
               </div>
             </div>
 

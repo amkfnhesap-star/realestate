@@ -53,7 +53,6 @@ function WhatsappIcon() {
 
 function ContactContent() {
   const t = useTranslations('contact');
-  const tCommon = useTranslations('common');
 
   const OFFICE_ITEMS = [
     { icon: <MapPinIcon />, label: t('office.addressLabel'), value: t('office.address') },
@@ -65,8 +64,17 @@ function ContactContent() {
   return (
     <>
       {/* Header */}
-      <section className="bg-brand-800 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-brand-900 py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(14,14,16,0.7) 0%, rgba(14,14,16,0.9) 100%)' }} />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-heading text-5xl md:text-6xl font-semibold text-white mb-4">{t('heading')}</h1>
           <p className="text-white/70 text-lg max-w-xl mx-auto">{t('subtitle')}</p>
         </div>
@@ -76,23 +84,23 @@ function ContactContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
-            <div className="bg-white rounded-2xl p-7 shadow-sm border border-slate-100">
+            <div className="bg-brand-100 rounded-2xl p-7 border border-brand-200">
               <h2 className="font-heading text-2xl font-semibold text-brand-800 mb-6">{t('form.heading')}</h2>
               <InquiryForm />
             </div>
 
             {/* Office info */}
             <div className="space-y-6">
-              <div className="bg-white rounded-2xl p-7 shadow-sm border border-slate-100">
+              <div className="bg-brand-100 rounded-2xl p-7 border border-brand-200">
                 <h2 className="font-heading text-2xl font-semibold text-brand-800 mb-6">{t('office.heading')}</h2>
                 <div className="space-y-5">
                   {OFFICE_ITEMS.map((item) => (
                     <div key={item.label} className="flex items-start gap-4">
-                      <div className="text-gold-500 mt-0.5 flex-shrink-0">{item.icon}</div>
+                      <div className="text-gold-400 mt-0.5 flex-shrink-0">{item.icon}</div>
                       <div>
-                        <p className="text-xs font-medium text-slate-400 mb-0.5">{item.label}</p>
+                        <p className="text-xs font-medium text-brand-400 mb-0.5">{item.label}</p>
                         {item.href ? (
-                          <a href={item.href} className="text-brand-800 hover:text-gold-600 transition-colors text-sm font-medium whitespace-pre-line">
+                          <a href={item.href} className="text-brand-800 hover:text-gold-400 transition-colors text-sm font-medium whitespace-pre-line">
                             {item.value}
                           </a>
                         ) : (
@@ -115,17 +123,18 @@ function ContactContent() {
                 {t('office.whatsapp')}
               </a>
 
-              {/* Map placeholder */}
-              <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm">
-                <div className="h-52 bg-brand-100 flex flex-col items-center justify-center gap-2 text-brand-400">
-                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
-                    <line x1="9" y1="3" x2="9" y2="18"/>
-                    <line x1="15" y1="6" x2="15" y2="21"/>
-                  </svg>
-                  <p className="text-sm font-medium">{tCommon('mapComingSoon')}</p>
-                  <p className="text-xs text-brand-300">{t('office.address')}</p>
-                </div>
+              {/* Google Map */}
+              <div className="rounded-2xl border border-brand-200 overflow-hidden">
+                <iframe
+                  title="Office location"
+                  src="https://maps.google.com/maps?q=Str.+Floreasca+14%2C+Sector+1%2C+Bucure%C8%99ti+014453%2C+Rom%C3%A2nia&output=embed&z=16"
+                  width="100%"
+                  height="208"
+                  style={{ border: 0, display: 'block' }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default function SellersForm() {
   });
 
   const inputClass =
-    'w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-brand-900 bg-white focus:outline-none focus:ring-2 focus:ring-gold-400 transition-colors placeholder:text-slate-400';
+    'w-full px-4 py-3 rounded-xl border border-brand-200 text-sm text-brand-800 bg-brand-100 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-400 transition-colors placeholder:text-brand-500';
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -86,7 +86,7 @@ export default function SellersForm() {
       />
       <button
         type="submit"
-        className="w-full bg-gold-400 text-white py-3.5 rounded-xl font-medium hover:bg-gold-500 transition-colors"
+        className="w-full bg-gold-400 text-brand-900 py-3.5 rounded-xl font-medium hover:bg-gold-500 transition-colors"
       >
         {t('submit')}
       </button>

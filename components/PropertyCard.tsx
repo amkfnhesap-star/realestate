@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useMessages } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import type { Property } from '@/lib/sampleData';
 
@@ -56,11 +56,13 @@ export default function PropertyCard({ property }: Props) {
     land: t('types.land'),
   };
 
-  const td = t as unknown as (key: string, values?: Record<string, string | number>) => string;
+  const messages = useMessages();
+  const propMsgs = (messages as any)?.properties?.propertyData;
   const typeName = TYPE_LABELS[property.type] ?? property.type;
-  const neighborhoodName = td(`propertyData.neighborhoods.${property.neighborhood}`);
-  const cityName = td(`propertyData.cities.${property.city}`);
-  const title = td('propertyData.titleTemplate', {
+  const neighborhoodName: string = propMsgs?.neighborhoods?.[property.neighborhood] ?? property.neighborhood;
+  const cityName: string = propMsgs?.cities?.[property.city] ?? property.city;
+  const tAny = t as unknown as (key: string, values?: Record<string, string | number>) => string;
+  const title = tAny('propertyData.titleTemplate', {
     bedrooms: property.bedrooms,
     type: typeName,
     neighborhood: neighborhoodName,
@@ -89,7 +91,7 @@ export default function PropertyCard({ property }: Props) {
           />
         )}
         <div className="absolute top-3 start-3 bg-gold-400 text-brand-900 px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
-          €{property.price.toLocaleString()}
+          €{new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(property.price)}
         </div>
         <div className="absolute top-3 end-3 text-brand-800 px-2.5 py-1 rounded-full text-xs uppercase tracking-wide backdrop-blur-sm" style={{ background: 'rgba(14,14,16,0.72)' }}>
           {TYPE_LABELS[property.type] ?? property.type}
@@ -122,7 +124,7 @@ export default function PropertyCard({ property }: Props) {
           )}
           <span className="flex items-center gap-1">
             <AreaIcon />
-            {property.area.toLocaleString()} {t('card.sqm')}
+            {new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(property.area)} {t('card.sqm')}
           </span>
         </div>
 
