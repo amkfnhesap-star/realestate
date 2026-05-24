@@ -24,8 +24,339 @@
     }
   },
   "home": {
-    "title": "Romanya'da Premium Gayrimenkul",
-    "subtitle": "Site yapım aşamasında — 4 aşamadan 1. aşama"
+    "hero": {
+      "title": "Romanya'da İdeal Mülkünüzü Bulun",
+      "titleBefore": "Romanya'da",
+      "titleAccent": "İdeal",
+      "titleAfter": "Mülkünüzü Bulun",
+      "subtitle": "Güvenilir gayrimenkul danışmanlarıyla premium daireler, evler ve yatırım fırsatları.",
+      "viewProperties": "Mülkleri Görüntüle",
+      "scheduleViewing": "Görüntüleme Planlayın",
+      "search": {
+        "propertyType": "Mülk Tipi",
+        "city": "Şehir",
+        "priceRange": "Fiyat Aralığı",
+        "button": "Ara",
+        "allTypes": "Tüm Tipler",
+        "allCities": "Tüm Şehirler",
+        "priceAny": "Herhangi bir fiyat",
+        "price1": "100.000 €'ya kadar",
+        "price2": "100.000 € – 250.000 €",
+        "price3": "250.000 € – 500.000 €",
+        "price4": "500.000 € üzeri"
+      }
+    },
+    "featured": {
+      "heading": "Öne Çıkan Mülkler",
+      "viewAll": "Tüm Mülkleri Görüntüle"
+    },
+    "categories": {
+      "heading": "Kategoriye Göre Ara",
+      "apartments": "Daireler",
+      "houses": "Evler",
+      "commercial": "Ticari",
+      "land": "Arsa"
+    },
+    "whyUs": {
+      "heading": "Neden Bizi Seçmelisiniz",
+      "verified": {
+        "title": "Doğrulanmış İlanlar",
+        "desc": "Her mülk, listelenmeden önce ekibimiz tarafından bizzat incelenir ve doğrulanır."
+      },
+      "communication": {
+        "title": "Hızlı İletişim",
+        "desc": "Günler değil saatler içinde yanıt veririz — zamanınız ve sorularınız her zaman bizim için önemlidir."
+      },
+      "expertise": {
+        "title": "Yerel Uzmanlık",
+        "desc": "Bükreş, Cluj, Brașov ve Karadeniz kıyısında 15 yıllık deneyim."
+      },
+      "negotiation": {
+        "title": "Profesyonel Müzakere",
+        "desc": "Danışmanlarımız, en iyi şartları sağlamak için her aşamada sizin adınıza savunuculuk yapar."
+      }
+    },
+    "team": {
+      "heading": "Danışmanlarımızla Tanışın",
+      "contact": "İletişim"
+    },
+    "testimonials": {
+      "heading": "Müşterilerimiz Ne Diyor"
+    },
+    "cta": {
+      "heading": "Mülkünüzü Bulmaya Hazır Mısınız?",
+      "subtitle": "Bize mesaj gönderin, danışmanlarımızdan biri 24 saat içinde sizinle iletişime geçsin.",
+      "success": "Teşekkürler! Kısa süre içinde sizinle iletişime geçeceğiz."
+    }
+  },
+  "properties": {
+    "heading": "Mülkler",
+    "found": "{count} mülk bulundu",
+    "noResults": "Kriterlerinize uyan mülk bulunamadı. Filtreleri ayarlamayı deneyin.",
+    "filters": {
+      "heading": "Filtreler",
+      "propertyType": "Mülk Tipi",
+      "city": "Şehir",
+      "priceRange": "Fiyat Aralığı",
+      "priceLabelEur": "Fiyat Aralığı (EUR)",
+      "minBedrooms": "Minimum Yatak Odası",
+      "area": "Alan (m²)",
+      "clear": "Filtreleri Temizle",
+      "allTypes": "Tüm Tipler",
+      "allCities": "Tüm Şehirler",
+      "any": "Herhangi",
+      "minPlaceholder": "Min",
+      "maxPlaceholder": "Maks",
+      "areaPlaceholder": "örn. 60"
+    },
+    "sort": {
+      "label": "Sırala",
+      "priceAsc": "Fiyat: Düşükten Yükseğe",
+      "priceDesc": "Fiyat: Yüksekten Düşüğe",
+      "newest": "En Yeniler"
+    },
+    "card": {
+      "viewDetails": "Detayları Görüntüle",
+      "beds": "yatak odası",
+      "baths": "banyo",
+      "sqm": "m²"
+    },
+    "types": {
+      "apartment": "Daire",
+      "house": "Ev",
+      "commercial": "Ticari",
+      "land": "Arsa"
+    },
+    "propertyData": {
+      "titleTemplate": "{bedrooms, plural, =0 {{neighborhood} – {type}} other {{bedrooms} Yatak Odalı {type} – {neighborhood}}}",
+      "cities": {
+        "București": "Bükreş",
+        "Cluj-Napoca": "Cluj-Napoca",
+        "Brașov": "Brașov",
+        "Constanța": "Constanța"
+      },
+      "neighborhoods": {
+        "Floreasca": "Floreasca",
+        "Dorobanți": "Dorobanți",
+        "Pipera": "Pipera",
+        "Băneasa": "Băneasa",
+        "Centru": "Merkez",
+        "Voluntari": "Voluntari",
+        "Mamaia": "Mamaia",
+        "Mărăști": "Mărăști"
+      }
+    }
+  },
+  "property": {
+    "back": "Mülklere Geri Dön",
+    "scheduleViewing": "Görüntüleme Planlayın",
+    "contactAgent": "Ajan ile İletişim",
+    "about": "Bu Mülk Hakkında",
+    "details": "Mülk Detayları",
+    "consultant": "Danışmanınız",
+    "similar": "Benzer Mülkler",
+    "inquire": "Bu Mülk Hakkında Soru Sorun",
+    "location": "Konum",
+    "yearBuilt": "İnşa Yılı",
+    "type": "Tip",
+    "area": "Alan",
+    "bedrooms": "Yatak Odaları",
+    "bathrooms": "Banyolar",
+    "sqm": "m²",
+    "mapNote": "Harita koordinatları: {lat}, {lng}",
+    "gallery": "Fotoğraf Galerisi",
+    "notFound": "Mülk bulunamadı.",
+    "notAvailable": "n/a"
+  },
+  "about": {
+    "heading": "RoEstate Hakkında",
+    "heroSub": "2009'dan bu yana Romanya'da güvenilir gayrimenkul ortağınız",
+    "story": {
+      "heading": "Hikayemiz",
+      "p1": "RoEstate, 2009 yılında Romanya'da şeffaf, çok dilli bir gayrimenkul danışmanlığı hizmetine artan ihtiyacı fark eden sınır ötesi gayrimenkul profesyonellerinden oluşan bir ekip tarafından kuruldu. Ülkeye yönelik uluslararası alıcı ve yatırımcıların ilgisi arttıkça, kültürler arasında köprü kuran ve karmaşıklığı basitleştiren bir hizmet inşa ettik.",
+      "p2": "Bugün uzman danışman ekibimiz, 20'den fazla ülkeden müşteriye Bükreş, Cluj-Napoca, Brașov, Constanța ve ötesinde satın alma, satma ve yatırım yapma konusunda yardımcı olmaktadır. Romanya'da İngilizce, Romanca, Türkçe ve Arapça hizmet veren ender ajanslardan biri olmaktan gurur duyuyoruz.",
+      "p3": "Doğru mülkü bulmak, stresli değil heyecan verici bir yolculuk olmalıdır. Bu nedenle hukuki rehberlik, noter koordinasyonu ve satın alma sonrası destek dahil olmak üzere ilk aramadan son imzaya kadar tam kapsamlı destek sunuyoruz."
+    },
+    "values": {
+      "heading": "Değerlerimiz",
+      "transparency": {
+        "title": "Şeffaflık",
+        "desc": "Mülk yolculuğunuzun her aşamasında dürüst tavsiye ve açık iletişime inanıyoruz."
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "desc": "Müşterilerimiz için yaptığımız her şeyde en yüksek profesyonel standartları koruruz."
+      },
+      "inclusion": {
+        "title": "Kapsayıcılık",
+        "desc": "Her kesimden ve ülkeden müşteriye hizmet veriyor, standart olarak çok dilli destek sunuyoruz."
+      },
+      "care": {
+        "title": "Müşteri Bakımı",
+        "desc": "Başarımızı memnuniyetinizle ölçüyoruz — ve bize güvendiğiniz referanslarla."
+      }
+    },
+    "team": {
+      "heading": "Ekibimiz"
+    },
+    "stats": {
+      "experience": "Yıllık Deneyim",
+      "sold": "Satılan Mülk",
+      "clients": "Mutlu Müşteri",
+      "cities": "Kapsanan Şehir"
+    }
+  },
+  "contact": {
+    "heading": "İletişime Geçin",
+    "subtitle": "Bir mülk hakkında sorunuz mu var veya görüntüleme planlamak mı istiyorsunuz? Ekibimiz yardıma hazır.",
+    "form": {
+      "heading": "Bize Mesaj Gönderin"
+    },
+    "office": {
+      "heading": "Ofisimiz",
+      "address": "Str. Floreasca 14, Sector 1\nBucurești 014453, România",
+      "phone": "+40 21 123 4567",
+      "email": "office@roestate.ro",
+      "hours": "Pzt–Cum: 09:00 – 18:00",
+      "whatsapp": "WhatsApp'ta Sohbet Et",
+      "addressLabel": "Adres",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-posta",
+      "hoursLabel": "Çalışma Saatleri",
+      "whatsappLabel": "WhatsApp"
+    }
+  },
+  "sellers": {
+    "hero": {
+      "heading": "Mülkünüzü Güvenle Satın",
+      "subtitle": "En iyi satış sonucunu elde etmek için yerel piyasa uzmanlığını, çok dilli erişimi ve profesyonel pazarlamayı bir araya getiriyoruz."
+    },
+    "benefits": {
+      "heading": "Neden RoEstate ile Listeleyin",
+      "b1": {
+        "title": "Uluslararası Alıcı Ağı",
+        "desc": "Romanya, Türkiye, Birleşik Krallık, Almanya ve Orta Doğu'dan doğrulanmış alıcılardan oluşan veritabanımıza erişin."
+      },
+      "b2": {
+        "title": "Doğru Piyasa Değerlemesi",
+        "desc": "Danışmanlarımız, mülkünüzü rekabetçi şekilde fiyatlandırmak için ayrıntılı bir karşılaştırmalı piyasa analizi sunar."
+      },
+      "b3": {
+        "title": "Profesyonel Pazarlama",
+        "desc": "Yüksek kaliteli fotoğrafçılık ve tüm önemli Romanya ve uluslararası mülk portallarında ilanlar."
+      },
+      "b4": {
+        "title": "Hukuki ve Noter Desteği",
+        "desc": "Sorunsuz ve uyumlu bir işlem sağlamak için güvenilir noterler ve avukatlarla koordinasyon sağlıyoruz."
+      },
+      "b5": {
+        "title": "Uzman Müzakere",
+        "desc": "Satışınız için en iyi fiyat ve koşulları sağlamayı hedefleyerek çıkarlarınızı sürekli temsil ediyoruz."
+      }
+    },
+    "process": {
+      "heading": "Nasıl Çalışır",
+      "s1": {
+        "title": "Ücretsiz Değerleme",
+        "desc": "Mülkünüzü ziyaret eder, ayrıntılı bir piyasa değerlemesi sunarız — hiçbir ücret ve yükümlülük olmaksızın."
+      },
+      "s2": {
+        "title": "Profesyonel İlan",
+        "desc": "Fotoğraf çekimini ayarlar, ilan açıklamasını hazırlar ve tüm ilgili portallarda yayınlarız."
+      },
+      "s3": {
+        "title": "Görüntülemeler ve Müzakere",
+        "desc": "Tüm görüntülemeleri yönetir ve en iyi satış fiyatını elde etmek için adınıza müzakere ederiz."
+      },
+      "s4": {
+        "title": "Hukuki Tamamlama",
+        "desc": "Son imza ve anahtar teslimata kadar hukuki ve noter sürecini koordine ediyoruz."
+      }
+    },
+    "listForm": {
+      "heading": "Mülkünüzü Listeleyin",
+      "subtitle": "Formu doldurun, bir danışman 24 saat içinde sizinle iletişime geçsin.",
+      "ownerName": "Mülk Sahibinin Adı",
+      "contactNumber": "İletişim Numarası",
+      "propertyType": "Mülk Tipi",
+      "city": "Şehir",
+      "cityOther": "Diğer",
+      "propertyDesc": "Kısa Açıklama",
+      "submit": "Sorgu Gönder",
+      "success": "Teşekkürler! Kısa süre içinde sizinle iletişime geçeceğiz."
+    },
+    "cta": {
+      "heading": "Satmaya Hazır Mısınız?",
+      "subtitle": "Ücretsiz, yükümlülük gerektirmeyen bir mülk değerlemesi için bugün bizimle iletişime geçin.",
+      "button": "Ücretsiz Değerleme Alın"
+    }
+  },
+  "buyers": {
+    "hero": {
+      "heading": "Mükemmel Mülke Giden Yolculuğunuz",
+      "subtitle": "İlk sorudan anahtarları aldığınız ana kadar her adımda size rehberlik ediyoruz."
+    },
+    "process": {
+      "heading": "Satın Alma Süreci",
+      "s1": {
+        "title": "İlk Danışmanlık",
+        "desc": "İhtiyaçlarınızı, bütçenizi ve tercih ettiğiniz konumu dinleyerek kişiselleştirilmiş bir mülk araması oluşturuyoruz."
+      },
+      "s2": {
+        "title": "Mülk Kısa Listesi",
+        "desc": "Kriterlerinize uyan özenle seçilmiş mülklerin bir listesini sunuyoruz — gürültü değil, yalnızca ilgili seçenekler."
+      },
+      "s3": {
+        "title": "Görüntülemeler",
+        "desc": "Her görüntülemede size eşlik eder, uzman yorumu ve dürüst değerlendirmeler sunarız."
+      },
+      "s4": {
+        "title": "Teklif ve Müzakere",
+        "desc": "Rekabetçi bir teklif yapmanıza ve adınıza en iyi fiyatı müzakere etmenize yardımcı oluyoruz."
+      },
+      "s5": {
+        "title": "Hukuki ve Tamamlama",
+        "desc": "Son teslimata kadar sorunsuz ve güvenli bir işlem sağlamak için noterler ve avukatlarla koordinasyon sağlıyoruz."
+      }
+    },
+    "whyRomania": {
+      "heading": "Neden Romanya'da Satın Almalısınız?",
+      "eu": {
+        "title": "AB Üyesi Devlet",
+        "desc": "Romanya, her ülkeden alıcılar için hukuki güvenlik, mülkiyet hakları koruması ve AB çerçevelerine erişim sunan tam AB üyesidir."
+      },
+      "foreign": {
+        "title": "Yabancı Alıcılara Açık",
+        "desc": "AB vatandaşları mülk satın alabilir. AB dışı vatandaşlar daire ve ticari mülke sahip olabilir; arazi sahipliği Romanya'da kayıtlı bir şirket aracılığıyla mümkündür."
+      },
+      "growth": {
+        "title": "Büyüyen Kentsel Pazarlar",
+        "desc": "Bükreş ve Cluj-Napoca, gelişen bir teknoloji sektörü ve yükselen hane gelirleriyle Orta Avrupa'nın en hızlı büyüyen şehirleri arasındadır."
+      },
+      "lifestyle": {
+        "title": "Yaşam Kalitesi",
+        "desc": "Romanya, zengin kültürel miras, güzel manzaralar, mükemmel mutfak ve Batı Avrupa standartlarına göre hâlâ erişilebilir bir yaşam maliyeti sunmaktadır."
+      }
+    },
+    "featured": {
+      "heading": "Öne Çıkan Mülklere Göz Atın"
+    },
+    "cta": {
+      "heading": "Mülk Aramanıza Bugün Başlayın",
+      "subtitle": "Uzmanlarımızdan biriyle ücretsiz danışmanlık rezervasyonu yapın ve Romanya'daki ideal mülkünüzü bulalım.",
+      "browse": "Mülklere Göz At",
+      "contact": "Bize Ulaşın"
+    }
+  },
+  "form": {
+    "name": "Ad Soyad",
+    "email": "E-posta Adresi",
+    "phone": "Telefon Numarası",
+    "message": "Mesaj",
+    "subject": "Konu",
+    "submit": "Mesaj Gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Teşekkürler! Kısa süre içinde sizinle iletişime geçeceğiz."
   },
   "footer": {
     "tagline": "Romanya'da sınır ötesi gayrimenkul yatırımı için güvenilir ortağınız.",
@@ -43,6 +374,7 @@
   "common": {
     "loading": "Yükleniyor...",
     "error": "Bir şeyler yanlış gitti",
-    "chatWithUs": "Bizimle sohbet edin"
+    "chatWithUs": "Bizimle sohbet edin",
+    "mapComingSoon": "Etkileşimli harita yakında"
   }
 }

@@ -1,40 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand color scale — deep navy */
-  --color-brand-50: #F4F6F9;
-  --color-brand-100: #E5E9F0;
-  --color-brand-200: #C9D1DC;
-  --color-brand-300: #9AAABC;
-  --color-brand-400: #5F7593;
-  --color-brand-500: #34496A;
-  --color-brand-600: #1F324F;
-  --color-brand-700: #142545;
-  --color-brand-800: #0F1B2D;
-  --color-brand-900: #0A1322;
-  --color-brand-950: #050912;
+  /* Brand scale — dark luxury (50=softest surface → 900=deepest black) */
+  --color-brand-50:  #16161a;
+  --color-brand-100: #1b1b20;
+  --color-brand-200: #2a2a31;
+  --color-brand-300: #3d3d47;
+  --color-brand-400: #6f6c66;
+  --color-brand-500: #a8a49c;
+  --color-brand-600: #c8c3bb;
+  --color-brand-700: #ddd9d2;
+  --color-brand-800: #f4f1ec;
+  --color-brand-900: #0e0e10;
+  --color-brand-950: #080809;
 
   /* Gold accent scale */
-  --color-gold-50: #FBF8F0;
-  --color-gold-100: #F5EFDD;
-  --color-gold-200: #EBDFBA;
-  --color-gold-300: #DCCA8E;
-  --color-gold-400: #C9A961;
-  --color-gold-500: #B68F40;
-  --color-gold-600: #9A7530;
-  --color-gold-700: #7C5C25;
-  --color-gold-800: #5E461E;
-  --color-gold-900: #3F2F15;
+  --color-gold-50:  #1f1a0f;
+  --color-gold-100: #2d2412;
+  --color-gold-200: #4a3820;
+  --color-gold-300: #7a6130;
+  --color-gold-400: #c9a35e;
+  --color-gold-500: #a8854a;
+  --color-gold-600: #ddc28f;
+  --color-gold-700: #f0d9a8;
+  --color-gold-800: #f7ecd0;
+  --color-gold-900: #fdf7ec;
 
   /* Font families */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
-  --font-arabic: var(--font-noto-arabic), "Noto Naskh Arabic", serif;
+  --font-arabic:  var(--font-noto-arabic), "Noto Naskh Arabic", serif;
 }
 
 :root {
-  --background: #FAFAF7;
-  --foreground: #0f172a;
+  --background: #0e0e10;
+  --foreground: #f4f1ec;
+  color-scheme: dark;
 }
 
 html {
@@ -54,6 +55,6 @@ body {
 
 /* Text selection */
 ::selection {
-  background-color: #0F1B2D;
-  color: #ffffff;
+  background-color: #c9a35e;
+  color: #0e0e10;
 }

@@ -24,8 +24,339 @@
     }
   },
   "home": {
-    "title": "Premium Real Estate in Romania",
-    "subtitle": "Site under construction — phase 1 of 4"
+    "hero": {
+      "title": "Find Your Ideal Property in Romania",
+      "titleBefore": "Find Your",
+      "titleAccent": "Ideal",
+      "titleAfter": "Property in Romania",
+      "subtitle": "Premium apartments, houses, and investment opportunities with trusted real estate consultants.",
+      "viewProperties": "View Properties",
+      "scheduleViewing": "Schedule a Viewing",
+      "search": {
+        "propertyType": "Property Type",
+        "city": "City",
+        "priceRange": "Price Range",
+        "button": "Search",
+        "allTypes": "All Types",
+        "allCities": "All Cities",
+        "priceAny": "Any Price",
+        "price1": "Up to €100,000",
+        "price2": "€100,000 – €250,000",
+        "price3": "€250,000 – €500,000",
+        "price4": "Over €500,000"
+      }
+    },
+    "featured": {
+      "heading": "Featured Properties",
+      "viewAll": "View All Properties"
+    },
+    "categories": {
+      "heading": "Browse by Category",
+      "apartments": "Apartments",
+      "houses": "Houses",
+      "commercial": "Commercial",
+      "land": "Land"
+    },
+    "whyUs": {
+      "heading": "Why Choose Us",
+      "verified": {
+        "title": "Verified Listings",
+        "desc": "Every property is personally inspected and verified by our team before it is listed."
+      },
+      "communication": {
+        "title": "Fast Communication",
+        "desc": "We respond within hours, not days — your time and questions always matter to us."
+      },
+      "expertise": {
+        "title": "Local Expertise",
+        "desc": "15 years of experience across Bucharest, Cluj, Brașov, and the Black Sea coast."
+      },
+      "negotiation": {
+        "title": "Professional Negotiation",
+        "desc": "Our consultants advocate for you at every stage to secure the best possible terms."
+      }
+    },
+    "team": {
+      "heading": "Meet Our Consultants",
+      "contact": "Contact"
+    },
+    "testimonials": {
+      "heading": "What Our Clients Say"
+    },
+    "cta": {
+      "heading": "Ready to Find Your Property?",
+      "subtitle": "Send us a message and one of our consultants will be in touch within 24 hours.",
+      "success": "Thank you! We'll be in touch shortly."
+    }
+  },
+  "properties": {
+    "heading": "Properties",
+    "found": "{count} properties found",
+    "noResults": "No properties match your criteria. Try adjusting the filters.",
+    "filters": {
+      "heading": "Filters",
+      "propertyType": "Property Type",
+      "city": "City",
+      "priceRange": "Price Range",
+      "priceLabelEur": "Price Range (EUR)",
+      "minBedrooms": "Min Bedrooms",
+      "area": "Area (sqm)",
+      "clear": "Clear Filters",
+      "allTypes": "All Types",
+      "allCities": "All Cities",
+      "any": "Any",
+      "minPlaceholder": "Min",
+      "maxPlaceholder": "Max",
+      "areaPlaceholder": "e.g. 60"
+    },
+    "sort": {
+      "label": "Sort by",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "newest": "Newest First"
+    },
+    "card": {
+      "viewDetails": "View Details",
+      "beds": "bed",
+      "baths": "bath",
+      "sqm": "sqm"
+    },
+    "types": {
+      "apartment": "Apartment",
+      "house": "House",
+      "commercial": "Commercial",
+      "land": "Land"
+    },
+    "propertyData": {
+      "titleTemplate": "{bedrooms, plural, =0 {{type} in {neighborhood}} other {{bedrooms}-Bedroom {type} in {neighborhood}}}",
+      "cities": {
+        "București": "Bucharest",
+        "Cluj-Napoca": "Cluj-Napoca",
+        "Brașov": "Brașov",
+        "Constanța": "Constanța"
+      },
+      "neighborhoods": {
+        "Floreasca": "Floreasca",
+        "Dorobanți": "Dorobanți",
+        "Pipera": "Pipera",
+        "Băneasa": "Băneasa",
+        "Centru": "City Centre",
+        "Voluntari": "Voluntari",
+        "Mamaia": "Mamaia",
+        "Mărăști": "Mărăști"
+      }
+    }
+  },
+  "property": {
+    "back": "Back to Properties",
+    "scheduleViewing": "Schedule a Viewing",
+    "contactAgent": "Contact Agent",
+    "about": "About This Property",
+    "details": "Property Details",
+    "consultant": "Your Consultant",
+    "similar": "Similar Properties",
+    "inquire": "Inquire About This Property",
+    "location": "Location",
+    "yearBuilt": "Year Built",
+    "type": "Type",
+    "area": "Area",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "sqm": "sqm",
+    "mapNote": "Map coordinates: {lat}, {lng}",
+    "gallery": "Photo Gallery",
+    "notFound": "Property not found.",
+    "notAvailable": "n/a"
+  },
+  "about": {
+    "heading": "About RoEstate",
+    "heroSub": "Your trusted partner for real estate in Romania since 2009",
+    "story": {
+      "heading": "Our Story",
+      "p1": "RoEstate was founded in 2009 by a team of cross-border real estate professionals who recognised a growing need for transparent, multilingual property consultancy in Romania. As the country attracted increasing interest from international buyers and investors, we built a service that bridges cultures and simplifies complexity.",
+      "p2": "Today, our team of specialist consultants serves clients from over 20 countries, helping them buy, sell, and invest across Bucharest, Cluj-Napoca, Brașov, Constanța, and beyond. We are proud to be one of the few agencies in Romania operating in English, Romanian, Turkish, and Arabic — removing language barriers so that every client feels at home.",
+      "p3": "We believe that finding the right property should be an exciting journey, not a stressful one. That is why we provide full-service support from initial search to final signature, including legal guidance, notary coordination, and post-purchase assistance."
+    },
+    "values": {
+      "heading": "Our Values",
+      "transparency": {
+        "title": "Transparency",
+        "desc": "We believe in honest advice and clear communication at every stage of your property journey."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "desc": "We hold ourselves to the highest professional standards in everything we do for our clients."
+      },
+      "inclusion": {
+        "title": "Inclusion",
+        "desc": "We serve clients from all backgrounds and countries, offering multilingual support as standard."
+      },
+      "care": {
+        "title": "Client Care",
+        "desc": "We measure our success by your satisfaction — and the referrals you trust us with."
+      }
+    },
+    "team": {
+      "heading": "Our Team"
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "sold": "Properties Sold",
+      "clients": "Happy Clients",
+      "cities": "Cities Covered"
+    }
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "subtitle": "Have a question about a property or want to schedule a viewing? Our team is ready to help.",
+    "form": {
+      "heading": "Send Us a Message"
+    },
+    "office": {
+      "heading": "Our Office",
+      "address": "Str. Floreasca 14, Sector 1\nBucurești 014453, România",
+      "phone": "+40 21 123 4567",
+      "email": "office@roestate.ro",
+      "hours": "Mon–Fri: 09:00 – 18:00",
+      "whatsapp": "Chat on WhatsApp",
+      "addressLabel": "Address",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Working Hours",
+      "whatsappLabel": "WhatsApp"
+    }
+  },
+  "sellers": {
+    "hero": {
+      "heading": "Sell Your Property with Confidence",
+      "subtitle": "We combine local market expertise, multilingual reach, and professional marketing to achieve the best possible outcome for your sale."
+    },
+    "benefits": {
+      "heading": "Why List With RoEstate",
+      "b1": {
+        "title": "International Buyer Network",
+        "desc": "Access our database of verified buyers from Romania, Turkey, the UK, Germany, and the Middle East."
+      },
+      "b2": {
+        "title": "Accurate Market Valuation",
+        "desc": "Our advisors provide a detailed comparative market analysis to price your property competitively."
+      },
+      "b3": {
+        "title": "Professional Marketing",
+        "desc": "High-quality photography and listings on all major Romanian and international property portals."
+      },
+      "b4": {
+        "title": "Legal & Notary Support",
+        "desc": "We coordinate with trusted notaries and lawyers to ensure a smooth, compliant transaction."
+      },
+      "b5": {
+        "title": "Expert Negotiation",
+        "desc": "We represent your interests throughout, aiming to secure the best price and terms for your sale."
+      }
+    },
+    "process": {
+      "heading": "How It Works",
+      "s1": {
+        "title": "Free Valuation",
+        "desc": "We visit your property and provide a detailed market valuation — at no cost and no obligation."
+      },
+      "s2": {
+        "title": "Professional Listing",
+        "desc": "We arrange photography, prepare the listing description, and publish on all relevant portals."
+      },
+      "s3": {
+        "title": "Viewings & Negotiation",
+        "desc": "We handle all viewings and negotiate on your behalf to achieve the optimum sale price."
+      },
+      "s4": {
+        "title": "Legal Completion",
+        "desc": "We coordinate the legal and notary process through to final signature and key handover."
+      }
+    },
+    "listForm": {
+      "heading": "List Your Property",
+      "subtitle": "Fill in the form and a consultant will contact you within 24 hours.",
+      "ownerName": "Owner Name",
+      "contactNumber": "Contact Number",
+      "propertyType": "Property Type",
+      "city": "City",
+      "cityOther": "Other",
+      "propertyDesc": "Brief Description",
+      "submit": "Submit Enquiry",
+      "success": "Thank you! We'll be in touch shortly."
+    },
+    "cta": {
+      "heading": "Ready to Sell?",
+      "subtitle": "Contact us today for a free, no-obligation property valuation.",
+      "button": "Get a Free Valuation"
+    }
+  },
+  "buyers": {
+    "hero": {
+      "heading": "Your Journey to the Perfect Property",
+      "subtitle": "We guide you every step of the way — from your first enquiry to the moment you hold the keys."
+    },
+    "process": {
+      "heading": "The Buying Process",
+      "s1": {
+        "title": "Initial Consultation",
+        "desc": "We listen to your needs, budget, and preferred location to create a personalised property search."
+      },
+      "s2": {
+        "title": "Property Shortlist",
+        "desc": "We present a curated selection of properties that match your criteria — no noise, just relevant options."
+      },
+      "s3": {
+        "title": "Viewings",
+        "desc": "We accompany you to every viewing, providing expert commentary and honest assessments."
+      },
+      "s4": {
+        "title": "Offer & Negotiation",
+        "desc": "We help you make a competitive offer and negotiate the best possible price on your behalf."
+      },
+      "s5": {
+        "title": "Legal & Completion",
+        "desc": "We coordinate with notaries and lawyers to ensure a smooth, secure transaction to final handover."
+      }
+    },
+    "whyRomania": {
+      "heading": "Why Buy in Romania?",
+      "eu": {
+        "title": "EU Member State",
+        "desc": "Romania is a full EU member, offering legal security, property rights protections, and access to EU frameworks for buyers from any country."
+      },
+      "foreign": {
+        "title": "Open to Foreign Buyers",
+        "desc": "EU nationals may purchase property freely. Non-EU nationals can own apartments and commercial property; land ownership is available via a Romanian-registered company."
+      },
+      "growth": {
+        "title": "Growing Urban Markets",
+        "desc": "Bucharest and Cluj-Napoca are among Central Europe's fastest-growing cities, driven by a thriving tech sector and rising household incomes."
+      },
+      "lifestyle": {
+        "title": "Quality of Life",
+        "desc": "Romania offers a rich cultural heritage, beautiful landscapes, excellent cuisine, and a cost of living that remains affordable by Western European standards."
+      }
+    },
+    "featured": {
+      "heading": "Browse Featured Properties"
+    },
+    "cta": {
+      "heading": "Start Your Property Search Today",
+      "subtitle": "Book a free consultation with one of our specialists and let us find your ideal property in Romania.",
+      "browse": "Browse Properties",
+      "contact": "Contact Us"
+    }
+  },
+  "form": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Message",
+    "subject": "Subject",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! We'll be in touch shortly."
   },
   "footer": {
     "tagline": "Your trusted partner for cross-border property investment in Romania.",
@@ -43,6 +374,7 @@
   "common": {
     "loading": "Loading...",
     "error": "Something went wrong",
-    "chatWithUs": "Chat with us"
+    "chatWithUs": "Chat with us",
+    "mapComingSoon": "Interactive map coming soon"
   }
 }

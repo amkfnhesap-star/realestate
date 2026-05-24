@@ -44,14 +44,14 @@ export default function LanguageSwitcher() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 hover:border-brand-300 hover:bg-brand-50 text-sm font-medium text-slate-700 transition-colors"
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-brand-200 hover:border-brand-300 bg-brand-100 hover:bg-brand-50 text-sm font-medium text-brand-700 transition-colors"
         aria-expanded={open}
         aria-haspopup="listbox"
       >
         <span>{current.flag}</span>
         <span>{current.label}</span>
         <svg
-          className={`w-3.5 h-3.5 text-slate-400 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`w-3.5 h-3.5 text-brand-500 transition-transform ${open ? "rotate-180" : ""}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -63,7 +63,7 @@ export default function LanguageSwitcher() {
 
       {open && (
         <div
-          className="absolute end-0 mt-1.5 w-36 bg-white rounded-xl border border-slate-200 shadow-lg overflow-hidden z-50"
+          className="absolute end-0 mt-1.5 w-36 bg-brand-100 rounded-xl border border-brand-200 shadow-2xl shadow-brand-950/60 overflow-hidden z-50"
           role="listbox"
         >
           {LANGUAGES.map((lang) => (
@@ -73,9 +73,9 @@ export default function LanguageSwitcher() {
               role="option"
               aria-selected={lang.code === locale}
               className={`
-                w-full flex items-center gap-2 px-3 py-2.5 text-sm text-start
-                hover:bg-brand-50 hover:text-brand-800 transition-colors
-                ${lang.code === locale ? "bg-brand-50 text-brand-800 font-medium" : "text-slate-700"}
+                w-full flex items-center gap-2 px-3 py-2.5 text-sm text-start transition-colors
+                hover:bg-brand-50 hover:text-brand-800
+                ${lang.code === locale ? "bg-brand-50 text-gold-400 font-medium" : "text-brand-600"}
               `}
             >
               <span>{lang.flag}</span>

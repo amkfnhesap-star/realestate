@@ -24,8 +24,339 @@
     }
   },
   "home": {
-    "title": "Imobiliare Premium în România",
-    "subtitle": "Site în construcție — faza 1 din 4"
+    "hero": {
+      "title": "Găsiți Proprietatea Ideală în România",
+      "titleBefore": "Găsiți Proprietatea",
+      "titleAccent": "Ideală",
+      "titleAfter": "în România",
+      "subtitle": "Apartamente, case și oportunități de investiții premium cu consultanți imobiliari de încredere.",
+      "viewProperties": "Vezi Proprietăți",
+      "scheduleViewing": "Programați o Vizionare",
+      "search": {
+        "propertyType": "Tipul Proprietății",
+        "city": "Oraș",
+        "priceRange": "Interval de Preț",
+        "button": "Caută",
+        "allTypes": "Toate Tipurile",
+        "allCities": "Toate Orașele",
+        "priceAny": "Orice preț",
+        "price1": "Până la 100.000 €",
+        "price2": "100.000 € – 250.000 €",
+        "price3": "250.000 € – 500.000 €",
+        "price4": "Peste 500.000 €"
+      }
+    },
+    "featured": {
+      "heading": "Proprietăți Recomandate",
+      "viewAll": "Vezi Toate Proprietățile"
+    },
+    "categories": {
+      "heading": "Caută după Categorie",
+      "apartments": "Apartamente",
+      "houses": "Case",
+      "commercial": "Comercial",
+      "land": "Teren"
+    },
+    "whyUs": {
+      "heading": "De Ce Să Ne Alegeți",
+      "verified": {
+        "title": "Anunțuri Verificate",
+        "desc": "Fiecare proprietate este inspectată și verificată personal de echipa noastră înainte de listare."
+      },
+      "communication": {
+        "title": "Comunicare Rapidă",
+        "desc": "Răspundem în câteva ore, nu zile — timpul și întrebările dvs. contează mereu pentru noi."
+      },
+      "expertise": {
+        "title": "Expertiză Locală",
+        "desc": "15 ani de experiență în București, Cluj, Brașov și litoralul Mării Negre."
+      },
+      "negotiation": {
+        "title": "Negociere Profesională",
+        "desc": "Consultanții noștri vă reprezintă interesele în fiecare etapă pentru a obține cei mai buni termeni."
+      }
+    },
+    "team": {
+      "heading": "Cunoașteți Consultanții Noștri",
+      "contact": "Contactați"
+    },
+    "testimonials": {
+      "heading": "Ce Spun Clienții Noștri"
+    },
+    "cta": {
+      "heading": "Gata să Vă Găsiți Proprietatea?",
+      "subtitle": "Trimiteți-ne un mesaj și un consultant vă va contacta în 24 de ore.",
+      "success": "Mulțumim! Vă vom contacta în curând."
+    }
+  },
+  "properties": {
+    "heading": "Proprietăți",
+    "found": "{count} proprietăți găsite",
+    "noResults": "Nicio proprietate nu corespunde criteriilor dvs. Încercați să ajustați filtrele.",
+    "filters": {
+      "heading": "Filtre",
+      "propertyType": "Tipul Proprietății",
+      "city": "Oraș",
+      "priceRange": "Interval de Preț",
+      "priceLabelEur": "Interval de preț (EUR)",
+      "minBedrooms": "Dormitoare Minime",
+      "area": "Suprafață (mp)",
+      "clear": "Șterge Filtrele",
+      "allTypes": "Toate Tipurile",
+      "allCities": "Toate Orașele",
+      "any": "Oricare",
+      "minPlaceholder": "Min",
+      "maxPlaceholder": "Max",
+      "areaPlaceholder": "ex. 60"
+    },
+    "sort": {
+      "label": "Sortează după",
+      "priceAsc": "Preț: Crescător",
+      "priceDesc": "Preț: Descrescător",
+      "newest": "Cele mai noi"
+    },
+    "card": {
+      "viewDetails": "Vezi Detalii",
+      "beds": "dormitor",
+      "baths": "baie",
+      "sqm": "mp"
+    },
+    "types": {
+      "apartment": "Apartament",
+      "house": "Casă",
+      "commercial": "Comercial",
+      "land": "Teren"
+    },
+    "propertyData": {
+      "titleTemplate": "{bedrooms, plural, =0 {{type} în {neighborhood}} other {{type} cu {bedrooms} dormitoare în {neighborhood}}}",
+      "cities": {
+        "București": "București",
+        "Cluj-Napoca": "Cluj-Napoca",
+        "Brașov": "Brașov",
+        "Constanța": "Constanța"
+      },
+      "neighborhoods": {
+        "Floreasca": "Floreasca",
+        "Dorobanți": "Dorobanți",
+        "Pipera": "Pipera",
+        "Băneasa": "Băneasa",
+        "Centru": "Centru",
+        "Voluntari": "Voluntari",
+        "Mamaia": "Mamaia",
+        "Mărăști": "Mărăști"
+      }
+    }
+  },
+  "property": {
+    "back": "Înapoi la Proprietăți",
+    "scheduleViewing": "Programați o Vizionare",
+    "contactAgent": "Contactați Agentul",
+    "about": "Despre Această Proprietate",
+    "details": "Detalii Proprietate",
+    "consultant": "Consultantul Dvs.",
+    "similar": "Proprietăți Similare",
+    "inquire": "Solicitați Informații",
+    "location": "Locație",
+    "yearBuilt": "Anul Construcției",
+    "type": "Tip",
+    "area": "Suprafață",
+    "bedrooms": "Dormitoare",
+    "bathrooms": "Băi",
+    "sqm": "mp",
+    "mapNote": "Coordonate hartă: {lat}, {lng}",
+    "gallery": "Galerie Foto",
+    "notFound": "Proprietate negăsită.",
+    "notAvailable": "N/A"
+  },
+  "about": {
+    "heading": "Despre RoEstate",
+    "heroSub": "Partenerul dvs. de încredere în imobiliare din România din 2009",
+    "story": {
+      "heading": "Povestea Noastră",
+      "p1": "RoEstate a fost fondată în 2009 de o echipă de profesioniști imobiliari transfrontalieri care au recunoscut nevoia crescândă de consultanță imobiliară transparentă și multilingvă în România. Pe măsură ce țara a atras un interes tot mai mare din partea cumpărătorilor și investitorilor internaționali, am construit un serviciu care unește culturi și simplifică complexitatea.",
+      "p2": "Astăzi, echipa noastră de consultanți specializați deservește clienți din peste 20 de țări, ajutându-i să cumpere, să vândă și să investească în București, Cluj-Napoca, Brașov, Constanța și nu numai. Suntem mândri că suntem una dintre puținele agenții din România care operează în engleză, română, turcă și arabă — eliminând barierele lingvistice pentru ca fiecare client să se simtă acasă.",
+      "p3": "Credem că găsirea proprietății potrivite ar trebui să fie o călătorie interesantă, nu una stresantă. De aceea oferim suport complet de la căutarea inițială până la semnătura finală, inclusiv îndrumări juridice, coordonare notarială și asistență post-achiziție."
+    },
+    "values": {
+      "heading": "Valorile Noastre",
+      "transparency": {
+        "title": "Transparență",
+        "desc": "Credem în sfaturi sincere și comunicare clară în fiecare etapă a parcursului dvs. imobiliar."
+      },
+      "excellence": {
+        "title": "Excelență",
+        "desc": "Ne menținem la cele mai înalte standarde profesionale în tot ceea ce facem pentru clienții noștri."
+      },
+      "inclusion": {
+        "title": "Incluziune",
+        "desc": "Deservim clienți din toate mediile și țările, oferind suport multilingv ca standard."
+      },
+      "care": {
+        "title": "Grijă față de Client",
+        "desc": "Ne măsurăm succesul prin satisfacția dvs. — și recomandările pe care ni le faceți."
+      }
+    },
+    "team": {
+      "heading": "Echipa Noastră"
+    },
+    "stats": {
+      "experience": "Ani de Experiență",
+      "sold": "Proprietăți Vândute",
+      "clients": "Clienți Mulțumiți",
+      "cities": "Orașe Acoperite"
+    }
+  },
+  "contact": {
+    "heading": "Luați Legătura",
+    "subtitle": "Aveți o întrebare despre o proprietate sau doriți să programați o vizionare? Echipa noastră este pregătită să ajute.",
+    "form": {
+      "heading": "Trimiteți-ne un Mesaj"
+    },
+    "office": {
+      "heading": "Biroul Nostru",
+      "address": "Str. Floreasca 14, Sector 1\nBucurești 014453, România",
+      "phone": "+40 21 123 4567",
+      "email": "office@roestate.ro",
+      "hours": "Lun–Vin: 09:00 – 18:00",
+      "whatsapp": "Discutați pe WhatsApp",
+      "addressLabel": "Adresă",
+      "phoneLabel": "Telefon",
+      "emailLabel": "Email",
+      "hoursLabel": "Program de Lucru",
+      "whatsappLabel": "WhatsApp"
+    }
+  },
+  "sellers": {
+    "hero": {
+      "heading": "Vindeți Proprietatea cu Încredere",
+      "subtitle": "Combinăm expertiza de piață locală, acoperirea multilingvă și marketingul profesional pentru a obține cel mai bun rezultat pentru vânzarea dvs."
+    },
+    "benefits": {
+      "heading": "De Ce Să Listați cu RoEstate",
+      "b1": {
+        "title": "Rețea Internațională de Cumpărători",
+        "desc": "Accesați baza noastră de date cu cumpărători verificați din România, Turcia, Marea Britanie, Germania și Orientul Mijlociu."
+      },
+      "b2": {
+        "title": "Evaluare Corectă de Piață",
+        "desc": "Consilierii noștri oferă o analiză comparativă detaliată de piață pentru a prețui proprietatea dvs. competitiv."
+      },
+      "b3": {
+        "title": "Marketing Profesional",
+        "desc": "Fotografii de înaltă calitate și anunțuri pe toate portalurile imobiliare românești și internaționale importante."
+      },
+      "b4": {
+        "title": "Suport Juridic și Notarial",
+        "desc": "Coordonăm cu notari și avocați de încredere pentru a asigura o tranzacție corectă și conformă."
+      },
+      "b5": {
+        "title": "Negociere de Expert",
+        "desc": "Vă reprezentăm interesele pe tot parcursul, urmărind să obținem cel mai bun preț și termeni pentru vânzarea dvs."
+      }
+    },
+    "process": {
+      "heading": "Cum Funcționează",
+      "s1": {
+        "title": "Evaluare Gratuită",
+        "desc": "Vizităm proprietatea dvs. și oferim o evaluare detaliată de piață — fără costuri și fără obligații."
+      },
+      "s2": {
+        "title": "Listare Profesională",
+        "desc": "Organizăm fotografii, pregătim descrierea anunțului și publicăm pe toate portalurile relevante."
+      },
+      "s3": {
+        "title": "Vizionări și Negocieri",
+        "desc": "Gestionăm toate vizionările și negociem în numele dvs. pentru a obține prețul optim de vânzare."
+      },
+      "s4": {
+        "title": "Finalizare Juridică",
+        "desc": "Coordonăm procesul juridic și notarial până la semnătura finală și predarea cheilor."
+      }
+    },
+    "listForm": {
+      "heading": "Listați Proprietatea",
+      "subtitle": "Completați formularul și un consultant vă va contacta în 24 de ore.",
+      "ownerName": "Numele Proprietarului",
+      "contactNumber": "Număr de Contact",
+      "propertyType": "Tipul Proprietății",
+      "city": "Oraș",
+      "cityOther": "Altul",
+      "propertyDesc": "Descriere Scurtă",
+      "submit": "Trimite Solicitarea",
+      "success": "Mulțumim! Vă vom contacta în curând."
+    },
+    "cta": {
+      "heading": "Gata să Vindeți?",
+      "subtitle": "Contactați-ne astăzi pentru o evaluare gratuită, fără obligații.",
+      "button": "Obțineți o Evaluare Gratuită"
+    }
+  },
+  "buyers": {
+    "hero": {
+      "heading": "Călătoria Dvs. spre Proprietatea Perfectă",
+      "subtitle": "Vă ghidăm la fiecare pas — de la prima solicitare până în momentul în care primiți cheile."
+    },
+    "process": {
+      "heading": "Procesul de Cumpărare",
+      "s1": {
+        "title": "Consultație Inițială",
+        "desc": "Ascultăm nevoile, bugetul și locația preferată pentru a crea o căutare personalizată de proprietăți."
+      },
+      "s2": {
+        "title": "Lista de Proprietăți",
+        "desc": "Prezentăm o selecție curated de proprietăți care corespund criteriilor dvs. — fără zgomot, doar opțiuni relevante."
+      },
+      "s3": {
+        "title": "Vizionări",
+        "desc": "Vă însoțim la fiecare vizionare, oferind comentarii de expert și evaluări sincere."
+      },
+      "s4": {
+        "title": "Ofertă și Negociere",
+        "desc": "Vă ajutăm să faceți o ofertă competitivă și să negociem cel mai bun preț posibil în numele dvs."
+      },
+      "s5": {
+        "title": "Juridic și Finalizare",
+        "desc": "Coordonăm cu notari și avocați pentru a asigura o tranzacție sigură și corectă până la predare."
+      }
+    },
+    "whyRomania": {
+      "heading": "De Ce să Cumpărați în România?",
+      "eu": {
+        "title": "Stat Membru UE",
+        "desc": "România este membră deplină a UE, oferind securitate juridică, protecția drepturilor de proprietate și acces la cadrul UE pentru cumpărători din orice țară."
+      },
+      "foreign": {
+        "title": "Deschis Cumpărătorilor Străini",
+        "desc": "Cetățenii UE pot cumpăra proprietăți liber. Cetățenii non-UE pot deține apartamente și proprietăți comerciale; terenurile pot fi achiziționate printr-o companie înregistrată în România."
+      },
+      "growth": {
+        "title": "Piețe Urbane în Creștere",
+        "desc": "București și Cluj-Napoca sunt printre orașele cu creșterea cea mai rapidă din Europa Centrală, stimulate de un sector tech înfloritor și venituri gospodărești în creștere."
+      },
+      "lifestyle": {
+        "title": "Calitatea Vieții",
+        "desc": "România oferă un patrimoniu cultural bogat, peisaje frumoase, bucătărie excelentă și un cost al vieții accesibil față de standardele vest-europene."
+      }
+    },
+    "featured": {
+      "heading": "Navigați prin Proprietățile Recomandate"
+    },
+    "cta": {
+      "heading": "Începeți Căutarea Astăzi",
+      "subtitle": "Rezervați o consultație gratuită cu unul dintre specialiștii noștri și găsiți proprietatea ideală în România.",
+      "browse": "Caută Proprietăți",
+      "contact": "Contactați-ne"
+    }
+  },
+  "form": {
+    "name": "Nume Complet",
+    "email": "Adresă de Email",
+    "phone": "Număr de Telefon",
+    "message": "Mesaj",
+    "subject": "Subiect",
+    "submit": "Trimite Mesajul",
+    "sending": "Se trimite...",
+    "success": "Mulțumim! Vă vom contacta în curând."
   },
   "footer": {
     "tagline": "Partenerul dvs. de încredere pentru investiții imobiliare transfrontaliere în România.",
@@ -43,6 +374,7 @@
   "common": {
     "loading": "Se încarcă...",
     "error": "Ceva a mers greșit",
-    "chatWithUs": "Discutați cu noi"
+    "chatWithUs": "Discutați cu noi",
+    "mapComingSoon": "Hartă interactivă în curând"
   }
 }
